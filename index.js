@@ -27,23 +27,20 @@ inquirer
     ])
     
     .then((data) => {
-        const shape = data.shape;
         let svgShape;
-        switch (shape) {
-            case 'circle':
+        if(data.shape === 'circle') {
                 svgShape = new circleLogo(data);
                 fs.writeFile('logo.svg', svgShape.render(data), err => {
-                    err ? console.log(err) : console.log('Successfully generated!')
-                });
-            case 'triangle':
+                    err ? console.log(err) : console.log('Generated logo.svg')
+                })}
+        else if(data.shape === 'triangle') {
                 svgShape = new triangleLogo(data);
                 fs.writeFile('logo.svg', svgShape.render(data), err => {
-                    err ? console.log(err) : console.log('Successfully generated!')
-                });
-            case 'square':
+                    err ? console.log(err) : console.log('Generated logo.svg')
+                })}
+        else if(data.shape === 'square') {
                 svgShape = new squareLogo(data);
                 fs.writeFile('logo.svg', svgShape.render(data), err => {
-                    err ? console.log(err) : console.log('Successfully generated!')
-                });
-        }
+                    err ? console.log(err) : console.log('Generated logo.svg')
+                })};
     })
