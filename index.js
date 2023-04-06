@@ -9,11 +9,11 @@ inquirer
         {
             type: 'input',
             name: 'txt',
-            message: 'Please enter the characters within your logo (Up to 3 total)'
+            message: 'Please enter the characters within your logo (Up to 3)'
         }, {
             type: 'input',
             name: 'txtColor',
-            message: 'What color of text would you like to use? (Enter color keyword or hexadecimal number)'
+            message: 'What color text would you like to use? (Enter color keyword or hexadecimal number)'
         }, {
             type: 'list',
             name: 'shape',
