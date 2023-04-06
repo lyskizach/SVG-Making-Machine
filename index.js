@@ -21,7 +21,7 @@ inquirer
             choices: ['circle', 'triangle', 'square']
         }, {
             type: 'input',
-            name: 'shaepColor',
+            name: 'shapeColor',
             message: 'What color would you like the logo to be? (Enter color keyword or hexadecimal number)'
         }
     ])
