@@ -1,5 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const circleLogo = requie('./lib/circle');
+const triangleLogo = require('./lib/triangle');
+const squareLogo = require('./lib//square');
 
 inquirer
     .prompt([
